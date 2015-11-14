@@ -6,11 +6,11 @@ app.get('/', function(request, response) {
 });
 
 app.get('/platform', function(request, response) {
-  response.render('pages/platform/index');
+  response.render('pages/platform/index', {page: 'dash'});
 });
 
-app.get('/platform/dash', function(request, response) {
-  response.render('pages/platform/dash');
+app.get('/platform/(*)', function(request, response) {
+  response.render('pages/platform/'+request.params[0]);
 });
 
 app.use(express.static(__dirname + '/assets'));
