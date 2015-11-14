@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/aidanfeay/snd-converge#readme",
   "dependencies": {
+    "ejs": "2.3.3",
     "express": "^4.13.3"
   }
 }
