@@ -1,3 +1,6 @@
-body {
-  background-color: #e6e6e6;
+.content {
+  max-width: 670px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
 }
