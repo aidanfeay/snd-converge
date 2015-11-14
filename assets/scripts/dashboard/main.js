@@ -40,6 +40,10 @@ require(
 		Converge.users = new Backbone.Collection();
 		Converge.users.add( JSON.parse( Users ) );
 
+		// Events collection
+		Converge.events = new Backbone.Collection();
+		Converge.events.add( JSON.parse( Events ) );
+
 		//router
 		Converge.router = new Router();
 	}

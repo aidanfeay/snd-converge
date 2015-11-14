@@ -5,7 +5,7 @@ app.get('/', function(request, response) {
   response.render('pages/home');
 });
 
-app.get('/platform/event', function(request, response) {
+app.get('/platform/event/*', function(request, response) {
   response.render('pages/platform/event');
 });
 
