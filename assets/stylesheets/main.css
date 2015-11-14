@@ -18,13 +18,38 @@ body {
     line-height: 22px;
 }
 
+#share-row {
+	width:100%;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	padding:10px 0px;
+}
 
-span#converge-btn {
+#share-row span {
+	/*margin:0px 10px 0px 0px;*/
+	width:40px;
 	text-align:center;
 	display:inline-block;
-	width:20px;
-	height:20px;
-	background-color: #ccc;
+	vertical-align: middle;
+	cursor:pointer;
+}
+#share-row span i.fa {
+	font-size:22px;
+}
+#share-row span#facebook i.fa {
+	color:#3b5998;
+}
+#share-row span#twitter i.fa {
+	color:#4099ff;
+}
+#share-row span#g-plus i.fa {
+	color: #D50F25;
+}
+
+span#converge-btn img{
+	cursor:pointer;
+	height:25px;
+
 }
 
 #converge-modal-overlay {
@@ -36,10 +61,9 @@ span#converge-btn {
 }
 
 #converge-modal {
-	padding:10px;
-	min-height:300px;
+	padding:20px 10px 0px 10px;
 	width:90%;
-	max-width:600px;
+	max-width:400px;
 	margin:200px auto;
 	position:relative;
 	height:auto;
@@ -64,4 +88,67 @@ span#converge-btn {
 
 #converge-modal .prompt {
 	font-size:20px;
+	margin:40px auto 40px auto;
+	text-align:center;
+	max-width:75%;
+}
+
+#converge-modal .prompt span {
+	font-weight:bold;
+}
+
+#converge-logo {
+	position:absolute;
+	top:10px;
+	left:10px;
+	width:40px;
+}
+
+.converge-opts {
+	bottom:0;
+}
+.converge-opts ul {
+	border-top:1px solid #ccc;
+}
+
+.converge-opts ul > li {
+	border-right:1px solid #ccc;
+	/*height:50px;*/
+	vertical-align: middle;
+    text-align: center;
+    cursor:pointer;
+    height:100px;
+    transition: all 0.2s ease;
+}
+.converge-opts ul > li:hover > a > i {
+	font-size:36px;
+	margin-top:28px;
+	opacity:1;
+	color:#009966;
+}
+
+.converge-opts ul > li:hover {
+	background: #efefef;
+}
+/*
+.converge-opts ul > li > a > i.fa-check {
+	color:#009966;
+}
+.converge-opts ul > li > a > i.fa-users {
+	color:#777;
+}
+.converge-opts ul > li > a > i.fa-plug{
+	color:#013757;
+}
+*/
+
+.converge-opts ul > li > a > i {
+	opacity:0.8;
+	font-size:32px;
+	transition: all 0.2s ease;
+	margin-top:30px;
+	color:#444c4b;
+}
+.converge-opts ul > li:last-child {
+	border:0px;
 }
