@@ -120,6 +120,10 @@ span#converge-btn img{
     height:100px;
     transition: all 0.2s ease;
 }
+
+.converge-opts ul > li a {
+	display:block;
+}
 .converge-opts ul > li:hover > a > i {
 	font-size:36px;
 	margin-top:15px;
