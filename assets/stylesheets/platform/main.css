@@ -1,3 +1,9 @@
+body, h1, h2, h3, h4, h5, h6, p {
+  font-family:'Lato';
+}
+
+
+
 .content {
   color: #292929;
   max-width: 600px;
@@ -68,16 +74,85 @@ h1 {
   background-position: center;
 }
 
+.events-list li h1 {
+  display: block;
+}
 
+.events-list li p {
+  display: inline-block;
+}
 
+.events-list li p.fa {
+  margin-right: 1em;
+}
 
+#nav .row {
+  max-width:95%;
+  width:95%;
+}
 #nav {
   width:100%;
   background:#fff;
-  padding:10px 0px;
   color:#292929;
-  border-bottom:2px solid #eee;
+  box-shadow: 0 2px 3px -3px #4d4d4d;
+  /*border-bottom:2px solid #eee;*/
 }
-#nav img {
-  width:40px;
+#nav-logo h1{
+  vertical-align: middle;
+  margin:0;
+  display:inline-block;
+  font-size:22px;
+  font-weight:300;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+#nav-logo img {
+  height:30px;
+  margin:10px;
+}
+
+#nav ul {
+  height:50px;
+  /*margin-bottom:0;*/
+}
+
+#nav ul > li {
+  height:50px;
+  text-align:center;
+  padding:12px 0px 0px 0px;
+  transition: all 0.1s ease;
+  border-bottom:4px solid #fff;
+}
+
+#nav ul > li:hover {
+  border-bottom:4px solid #009966;
+  padding-top:8px;
+}
+
+/*#nav ul > li:hover*/
+
+#nav ul > li > a {
+  display:block;
+  width:100%;
+  height:100%;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  color:#212121;
+  font-weight:300;
+}
+
+
+#nav i#settings {
+  margin-top:8px;
+  color:#212121;
+  float:right;
+  font-size:30px;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+#nav i#settings:hover{
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  color:#009966;
 }
