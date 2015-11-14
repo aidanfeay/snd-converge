@@ -4,12 +4,14 @@ require.config({
         'jquery': 'bower_components/jquery/dist/jquery.min',
         'underscore': 'bower_components/underscore/underscore-min',
         'backbone' : 'bower_components/backbone/backbone-min',
+        'text' : 'bower_components/text/text',
         'moment' : 'bower_components/moment/min/moment.min',
         'router' : './router',
         'collections' : './collections',
         'views' : './views',
         'templates' : './templates',
-        'models' : './models'
+        'models' : './models',
+        'data' : './data'
 	}
 });
 
@@ -18,9 +20,12 @@ require(
 		'jquery',
 		'underscore',
 		'backbone',
-		'router'
+		'router',
+		'text!data/users.json'
+		'text!data/topics.json'
+		'text!data/events.json'
 	],
-	function($, _, Backbone, Router){
+	function($, _, Backbone, Router, Users, Topics, Events){
 		'use strict';
 
 		window.Converge = {};
