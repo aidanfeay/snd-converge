@@ -1,21 +1,20 @@
 
-define( ['jquery','underscore', 'backbone'] , function($, _, Backbone){
+define( ['jquery','underscore', 'backbone', 'views/event'] , function($, _, Backbone, EventView){
 
 	'use strict';
 
 	var Workspace = Backbone.Router.extend({
 
 		routes : {
-			"event(/)" : "event"
+			"platform/event(/)" : "event"
 		},
 
 		initialize : function(){
 			Backbone.history.start({pushState: true});
-
 		},
 
 		event: function() {
-			console.log('event')
+			new EventView();
 		}
 
 	});

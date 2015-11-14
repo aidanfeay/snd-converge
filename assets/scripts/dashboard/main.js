@@ -21,11 +21,12 @@ require(
 		'underscore',
 		'backbone',
 		'router',
+		'views/event',
 		'text!data/users.json',
 		'text!data/topics.json',
 		'text!data/events.json'
 	],
-	function($, _, Backbone, Router, Users, Topics, Events){
+	function($, _, Backbone, Router, EventPage, Users, Topics, Events){
 		'use strict';
 
 		window.Converge = {};
@@ -34,11 +35,12 @@ require(
 		//events
 		Converge.events = _.extend({}, Backbone.Events);
 
-		//router
-		Converge.router = new Router();
 
 		// Users collection
 		Converge.users = new Backbone.Collection();
 		Converge.users.add( JSON.parse( Users ) );
+
+		//router
+		Converge.router = new Router();
 	}
 );
