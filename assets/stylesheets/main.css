@@ -76,14 +76,14 @@ span#converge-btn img{
 #close-modal {
 	cursor:pointer;
 	font-size:26px;
-	color:#333;
+	color:#d8d8d8;
 	font-weight:bold;
 	position:absolute;
-	top:0px;
+	top:10px;
 	right:10px;
 }
 #close-modal:hover {
-	color:#777;
+	color:#aaa;
 }
 
 #converge-modal .prompt {
@@ -122,7 +122,7 @@ span#converge-btn img{
 }
 .converge-opts ul > li:hover > a > i {
 	font-size:36px;
-	margin-top:28px;
+	margin-top:15px;
 	opacity:1;
 	color:#009966;
 }
@@ -130,23 +130,19 @@ span#converge-btn img{
 .converge-opts ul > li:hover {
 	background: #efefef;
 }
-/*
-.converge-opts ul > li > a > i.fa-check {
-	color:#009966;
-}
-.converge-opts ul > li > a > i.fa-users {
-	color:#777;
-}
-.converge-opts ul > li > a > i.fa-plug{
-	color:#013757;
-}
-*/
 
-.converge-opts ul > li > a > i {
+.converge-opts ul > li > a label {
+	font-size:12px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	margin-top:10px;
+}
+
+.converge-opts ul > li > a i {
 	opacity:0.8;
 	font-size:32px;
 	transition: all 0.2s ease;
-	margin-top:30px;
+	margin-top:20px;
 	color:#444c4b;
 }
 .converge-opts ul > li:last-child {
