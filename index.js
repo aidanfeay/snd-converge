@@ -9,6 +9,10 @@ app.get('/platform', function(request, response) {
   response.render('pages/platform/index');
 });
 
+app.get('/platform/dash', function(request, response) {
+  response.render('pages/platform/dash');
+});
+
 app.use(express.static(__dirname + '/assets'));
 
 app.set('views', __dirname + '/views');
