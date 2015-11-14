@@ -74,7 +74,17 @@ h1 {
   background-position: center;
 }
 
+.events-list li h1 {
+  display: block;
+}
 
+.events-list li p {
+  display: inline-block;
+}
+
+.events-list li p.fa {
+  margin-right: 1em;
+}
 
 #nav .row {
   max-width:95%;
