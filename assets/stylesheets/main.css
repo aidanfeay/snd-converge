@@ -1,6 +1,51 @@
+body {
+	padding:0;
+	margin:0;
+}
+
 .content {
   max-width: 670px;
   padding: 10px 20px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
+}
+
+.content p {
+    padding-top: 10px;
+    font-family: Arial, sans-serif;
+    margin: 0 0 10px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+span#converge-btn {
+	text-align:center;
+	display:inline-block;
+	width:20px;
+	height:20px;
+	background-color: #ccc;
+}
+
+#converge-modal-overlay {
+	background-color:rgba(0,0,0,0.3);
+	width:100%;
+	height:100%;
+	position:fixed;
+	display:none;
+}
+
+#converge-modal {
+	padding:10px;
+	min-height:300px;
+	width:90%;
+	max-width:600px;
+	margin:200px auto;
+	position:relative;
+	height:auto;
+	background-color:#fff;
+	border:1px solid #eee;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
 }
