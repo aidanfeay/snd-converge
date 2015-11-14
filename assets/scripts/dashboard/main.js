@@ -21,8 +21,8 @@ require(
 		'underscore',
 		'backbone',
 		'router',
-		'text!data/users.json'
-		'text!data/topics.json'
+		'text!data/users.json',
+		'text!data/topics.json',
 		'text!data/events.json'
 	],
 	function($, _, Backbone, Router, Users, Topics, Events){
@@ -36,5 +36,9 @@ require(
 
 		//router
 		Converge.router = new Router();
+
+		// Users collection
+		Converge.users = new Backbone.Collection();
+		Converge.users.add( JSON.parse( Users ) );
 	}
 );
