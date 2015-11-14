@@ -67,3 +67,17 @@ h1 {
   background-size: cover;
   background-position: center;
 }
+
+
+
+
+#nav {
+  width:100%;
+  background:#fff;
+  padding:10px 0px;
+  color:#292929;
+  border-bottom:2px solid #eee;
+}
+#nav img {
+  width:40px;
+}
