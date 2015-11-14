@@ -5,12 +5,12 @@ app.get('/', function(request, response) {
   response.render('pages/home');
 });
 
-app.get('/platform', function(request, response) {
-  response.render('pages/platform/index', {page: 'dash'});
+app.get('/platform/event', function(request, response) {
+  response.render('pages/platform/event');
 });
 
-app.get('/platform/(*)', function(request, response) {
-  response.render('pages/platform/'+request.params[0]);
+app.get('/platform/dash', function(request, response) {
+  response.render('pages/platform/dash');
 });
 
 app.use(express.static(__dirname + '/assets'));
