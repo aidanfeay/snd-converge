@@ -1,0 +1,40 @@
+require.config({
+	baseUrl : '/scripts/dashboard',
+	paths : {
+        'jquery': 'bower_components/jquery/dist/jquery.min',
+        'underscore': 'bower_components/underscore/underscore-min',
+        'backbone' : 'bower_components/backbone/backbone-min',
+        'text' : 'bower_components/text/text',
+        'moment' : 'bower_components/moment/min/moment.min',
+        'router' : './router',
+        'collections' : './collections',
+        'views' : './views',
+        'templates' : './templates',
+        'models' : './models',
+        'data' : './data'
+	}
+});
+
+require(
+	[
+		'jquery',
+		'underscore',
+		'backbone',
+		'router',
+		'text!data/users.json'
+		'text!data/topics.json'
+		'text!data/events.json'
+	],
+	function($, _, Backbone, Router, Users, Topics, Events){
+		'use strict';
+
+		window.Converge = {};
+		Converge = window.Converge;
+
+		//events
+		Converge.events = _.extend({}, Backbone.Events);
+
+		//router
+		Converge.router = new Router();
+	}
+);
