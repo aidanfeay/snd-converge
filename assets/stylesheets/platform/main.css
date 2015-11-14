@@ -1,0 +1,9 @@
+.content {
+  max-width: 670px;
+  margin: 0 auto;
+}
+
+ul, li {
+  list-style: none;
+  margin-left: 0;
+}

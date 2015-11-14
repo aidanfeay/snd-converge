@@ -6,7 +6,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/platform', function(request, response) {
-  response.render('pages/platform/dash');
+  response.render('pages/platform/index');
 });
 
 app.use(express.static(__dirname + '/assets'));
