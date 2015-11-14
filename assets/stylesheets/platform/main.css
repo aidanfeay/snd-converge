@@ -100,3 +100,15 @@ h1 {
   width:40px;
   margin:10px;
 }
+
+#nav ul {
+  margin-bottom:0;
+}
+
+#nav ul > li {
+  text-align:center;
+}
+
+#nav ul > li:hover {
+  border-bottom:3px solid green;
+}
