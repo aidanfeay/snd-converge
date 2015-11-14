@@ -43,9 +43,25 @@ span#converge-btn {
 	margin:200px auto;
 	position:relative;
 	height:auto;
+	border:1px solid #ccc;
 	background-color:#fff;
-	border:1px solid #eee;
 	-webkit-box-shadow: 0 10px 6px -6px #777;
        -moz-box-shadow: 0 10px 6px -6px #777;
             box-shadow: 0 10px 6px -6px #777;
+}
+#close-modal {
+	cursor:pointer;
+	font-size:26px;
+	color:#333;
+	font-weight:bold;
+	position:absolute;
+	top:0px;
+	right:10px;
+}
+#close-modal:hover {
+	color:#777;
+}
+
+#converge-modal .prompt {
+	font-size:20px;
 }

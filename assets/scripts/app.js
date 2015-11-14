@@ -1,10 +1,6 @@
-var converge = document.getElementById('converge-btn'),
-	modal = document.getElementById('converge-modal-overlay');
+$converge = $('#converge-btn'),
+$modal = $('#converge-modal-overlay');
 
-
-console.log(converge);
-
-converge.addEventListener('click', function(){
-
-	modal.style.display = 'block'
+$converge.on('click', function(){
+	$modal.fadeIn('fast');
 });
