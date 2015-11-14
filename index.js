@@ -5,6 +5,10 @@ app.get('/', function(request, response) {
   response.render('pages/home');
 });
 
+app.get('/platform', function(request, response) {
+  response.render('pages/platform/dash');
+});
+
 app.use(express.static(__dirname + '/assets'));
 
 app.set('views', __dirname + '/views');
