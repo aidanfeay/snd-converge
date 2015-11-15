@@ -6,6 +6,7 @@ require.config({
         'backbone' : 'bower_components/backbone/backbone-min',
         'text' : 'bower_components/text/text',
         'moment' : 'bower_components/moment/min/moment.min',
+        'leaflet' : 'bower_components/leaflet/dist/leaflet',
         'router' : './router',
         'collections' : './collections',
         'views' : './views',
@@ -21,11 +22,12 @@ require(
 		'underscore',
 		'backbone',
 		'router',
+		'views/event',
 		'text!data/users.json',
 		'text!data/topics.json',
 		'text!data/events.json'
 	],
-	function($, _, Backbone, Router, Users, Topics, Events){
+	function($, _, Backbone, Router, EventPage, Users, Topics, Events){
 		'use strict';
 
 		window.Converge = {};
@@ -34,11 +36,16 @@ require(
 		//events
 		Converge.events = _.extend({}, Backbone.Events);
 
-		//router
-		Converge.router = new Router();
 
 		// Users collection
 		Converge.users = new Backbone.Collection();
 		Converge.users.add( JSON.parse( Users ) );
+
+		// Events collection
+		Converge.events = new Backbone.Collection();
+		Converge.events.add( JSON.parse( Events ) );
+
+		//router
+		Converge.router = new Router();
 	}
 );
