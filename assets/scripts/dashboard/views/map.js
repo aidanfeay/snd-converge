@@ -5,11 +5,13 @@ define(
 		'underscore',
 		'backbone',
 		'leaflet',
+		'text!templates/pin.html'
 	] , function(
 		$,
 		_,
 		Backbone,
-		L
+		L,
+		PinHtml
 	){
 
 	'use strict';
@@ -19,6 +21,7 @@ define(
 		mapTileLayer: null,
 		map: null,
 		defaultCenter: [30.247770, -97.737096],
+		pinTemplate: _.template(PinHtml),
 
 		initialize : function(detailsArray, id, zoom){
 			this.initializeMapTiles();
@@ -28,7 +31,7 @@ define(
 
 			_.each(detailsArray, function(details) {
 				L.marker(details.coordinates).addTo(this.map)
-			    .bindPopup(details.name+'<br/>'+details.location)
+			    .bindPopup(this.pinTemplate(details))
 			    .openPopup();
 			 }, this);
 		},
