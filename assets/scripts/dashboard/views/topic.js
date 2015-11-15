@@ -20,7 +20,7 @@ define(
 
 		initialize : function(){
 			Converge.events.each(function(model){
-				if (model.get('topics').indexOf('housing') > -1){
+				if (model.get('topics').indexOf('recycling') > -1){
 					this.eventDetails.push(model.attributes);
 				}
 			}, this);
