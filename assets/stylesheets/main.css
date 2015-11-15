@@ -143,6 +143,16 @@ span#converge-btn img{
 	border:0px;
 }
 
+#share-row span#facebook i.fa {
+	color:#3b5998;
+}
+#share-row span#twitter i.fa {
+	color:#4099ff;
+}
+#share-row span#g-plus i.fa {
+	color: #D50F25;
+}
+
 #confirm-converge {
 	display:none;
 	margin-top:40px;
