@@ -4,12 +4,14 @@ define(
 		'jquery',
 		'underscore',
 		'backbone',
-		'views/map'
+		'views/map',
+		'text!templates/eventUser.html'
 	] , function(
 		$,
 		_,
 		Backbone,
-		MapView
+		MapView,
+		UserTemplate
 	){
 
 	'use strict';
@@ -25,6 +27,13 @@ define(
 				}
 			}, this);
 			new MapView( this.eventDetails, 'topic-map', 13);
+
+			Converge.users.each(function(user){
+				var template = _.template(UserTemplate);
+				var userHtml = template(user.attributes);
+				$('#user-list').append(userHtml);
+			}, this);
+
 		}
 
 	});
