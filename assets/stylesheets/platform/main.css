@@ -10,6 +10,12 @@ body, h1, h2, h3, h4, h5, h6, p {
   margin: 20px auto;
 }
 
+.dash-content {
+  color: #292929;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
 ul, li {
   list-style: none;
   margin-left: 0;
@@ -129,7 +135,6 @@ h1 {
   padding-top:8px;
 }
 
-/*#nav ul > li:hover*/
 
 #nav ul > li > a {
   display:block;
@@ -156,3 +161,6 @@ h1 {
   transform: rotate(20deg);
   color:#009966;
 }
+
+
+
