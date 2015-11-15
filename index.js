@@ -17,6 +17,10 @@ app.get('/platform/local', function(request, response) {
   response.render('pages/platform/local');
 });
 
+app.get('/platform/topic', function(request, response) {
+  response.render('pages/platform/topic');
+});
+
 app.use(express.static(__dirname + '/assets'));
 
 app.set('views', __dirname + '/views');

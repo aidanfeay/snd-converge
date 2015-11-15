@@ -1,5 +1,5 @@
 
-define( ['jquery','underscore', 'backbone', 'views/event', 'views/local'] , function($, _, Backbone, EventView, LocalView){
+define( ['jquery','underscore', 'backbone', 'views/event', 'views/local','views/topic'] , function($, _, Backbone, EventView, LocalView, TopicView){
 
 	'use strict';
 
@@ -8,7 +8,8 @@ define( ['jquery','underscore', 'backbone', 'views/event', 'views/local'] , func
 		routes : {
 			"platform/event/:event" : "event",
 			"platform/event(/)" : "randomizeEvent",
-			"platform/local(/)" : "local"
+			"platform/local(/)" : "local",
+			"platform/topic(/)" : "topic"
 
 		},
 
@@ -29,7 +30,12 @@ define( ['jquery','underscore', 'backbone', 'views/event', 'views/local'] , func
 
 		local: function() {
 			new LocalView();
+		},
+
+		topic: function() {
+			new TopicView();
 		}
+
 
 	});
 	return Workspace;
