@@ -6,6 +6,7 @@ require.config({
         'backbone' : 'bower_components/backbone/backbone-min',
         'text' : 'bower_components/text/text',
         'moment' : 'bower_components/moment/min/moment.min',
+        'leaflet' : 'bower_components/leaflet/dist/leaflet',
         'router' : './router',
         'collections' : './collections',
         'views' : './views',

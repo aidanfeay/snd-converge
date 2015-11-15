@@ -1,6 +1,10 @@
 [
 	{
 		"name":"Recycling in Austin",
-		"slug":"recycling-in-austin"
+		"slug":"recycling-in-austin",
+		"startTime" : 1447621200,
+		"endTime" : 1447626600,
+		"location" : "350 Barton Springs, Austin, TX",
+		"coordinates" : [30.2588032122161,-97.7480736785025]
 	}
 ]

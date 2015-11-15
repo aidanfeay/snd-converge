@@ -19,7 +19,7 @@ define( ['jquery','underscore', 'backbone', 'views/event'] , function($, _, Back
 			new EventView(route);
 		},
 
-		// URL platform/event returns a random event from the collection
+		// platform/event returns a random event from the collection
 		randomizeEvent: function() {
 			var eventSlugs = Converge.events.pluck('slug');
 			this.event(_.sample(eventSlugs, 1)[0]);
