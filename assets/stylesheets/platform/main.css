@@ -2,7 +2,13 @@ body, h1, h2, h3, h4, h5, h6, p {
   font-family:'Lato';
 }
 
+a, a:visited {
+  color:#009966;
+}
 
+a:hover, a:focus {
+  color:#009966;
+}
 
 .content {
   color: #292929;
@@ -67,7 +73,7 @@ h1 {
 }
 
 .user-list a {
-  color: #292929;
+  color:#009966;
 }
 
 .user-list li span {
@@ -147,6 +153,11 @@ h1 {
 #nav ul > li:hover {
   border-bottom:4px solid #009966;
   padding-top:8px;
+  color:#212121;
+}
+
+#nav ul > li:hover a, #nav ul > li a:hover{
+  color:#212121;
 }
 
 
