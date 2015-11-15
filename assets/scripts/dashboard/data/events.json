@@ -6,5 +6,29 @@
 		"endTime" : 1447626600,
 		"location" : "350 Barton Springs, Austin, TX",
 		"coordinates" : [30.2588032122161,-97.7480736785025]
+	},
+	{
+		"name":"The rent is too damn high!",
+		"slug":"rent-is-too-damn-high",
+		"startTime" : 1447621200,
+		"endTime" : 1447626600,
+		"location" : "2500 Glen Springs Way, Austin, TX",
+		"coordinates" : [30.2307716,-97.7421127]
+	},
+	{
+		"name":"We love tacos",
+		"slug":"we-love-tacos",
+		"startTime" : 1447621200,
+		"endTime" : 1447626600,
+		"location" : "2015 E Riverside Dr, Austin, TX",
+		"coordinates" : [30.2409026442678,-97.7277821496154]
+	},
+	{
+		"name":"Diverse communities forum",
+		"slug":"diverse-communities-forum",
+		"startTime" : 1447621200,
+		"endTime" : 1447626600,
+		"location" : "900 Chicon St, Austin, TX",
+		"coordinates" : [30.2650429338564,-97.7210383487412]
 	}
 ]

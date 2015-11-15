@@ -1,5 +1,5 @@
 
-define( ['jquery','underscore', 'backbone', 'views/event'] , function($, _, Backbone, EventView){
+define( ['jquery','underscore', 'backbone', 'views/event', 'views/local'] , function($, _, Backbone, EventView, LocalView){
 
 	'use strict';
 
@@ -7,7 +7,9 @@ define( ['jquery','underscore', 'backbone', 'views/event'] , function($, _, Back
 
 		routes : {
 			"platform/event/:event" : "event",
-			"platform/event(/)" : "randomizeEvent"
+			"platform/event(/)" : "randomizeEvent",
+			"platform/local(/)" : "local"
+
 		},
 
 		initialize : function(){
@@ -23,6 +25,10 @@ define( ['jquery','underscore', 'backbone', 'views/event'] , function($, _, Back
 		randomizeEvent: function() {
 			var eventSlugs = Converge.events.pluck('slug');
 			this.event(_.sample(eventSlugs, 1)[0]);
+		},
+
+		local: function() {
+			new LocalView();
 		}
 
 	});

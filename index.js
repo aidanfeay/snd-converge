@@ -13,6 +13,10 @@ app.get('/platform/dash', function(request, response) {
   response.render('pages/platform/dash');
 });
 
+app.get('/platform/local', function(request, response) {
+  response.render('pages/platform/local');
+});
+
 app.use(express.static(__dirname + '/assets'));
 
 app.set('views', __dirname + '/views');

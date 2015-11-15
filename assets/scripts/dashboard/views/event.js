@@ -7,7 +7,8 @@ define(
 		'text!templates/eventUser.html',
 		'text!templates/eventDetails.html',
 		'moment',
-		'leaflet'
+		'leaflet',
+		'views/map'
 	] , function(
 		$,
 		_,
@@ -15,7 +16,8 @@ define(
 		eventUserTemplate,
 		eventDetailsTemplate,
 		Moment,
-		L
+		L,
+		MapView
 	){
 
 	'use strict';
@@ -66,11 +68,7 @@ define(
 			$('#' + this.selectors.eventDetails).append(eventDetails);
 
 			// setup map
-			this.map = L.map(this.selectors.map).setView(details.coordinates, 13);
-			this.mapTileLayer.addTo(this.map);
-			L.marker(details.coordinates).addTo(this.map)
-			    .bindPopup(details.name+'<br/>'+details.location)
-			    .openPopup();
+			this.map = new MapView([details], this.selectors.map, 13);
 		},
 
 		dateTime: function(ts){
